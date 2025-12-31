@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Expense Tracker</h1>
+
+        <!-- Expense Form -->
+        <form class="expense-form">
+            <div class="form-group">
+                <label>Amount</label>
+                <input type="number" placeholder="Enter amount">
+            </div>
+
+            <div class="form-group">
+                <label>Category</label>
+                <input type="text" placeholder="Food, Travel, Bills">
+            </div>
+
+            <div class="form-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" placeholder="Optional note">
+            </div>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+
+</body>
+</html>
